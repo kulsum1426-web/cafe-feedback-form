@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Feedback Form</title>
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(to right, #3e2723, #6d4c41);
+        margin: 0;
+        padding: 0;
+        color: #fff;
+    }
+
+    .container {
+        max-width: 700px;
+        margin: 50px auto;
+        background: #efebe9;
+        color: #3e2723;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #4e342e;
+    }
+
+    h2 {
+        border-bottom: 2px solid #d7ccc8;
+        padding-bottom: 5px;
+        margin-top: 25px;
+        color: #5d4037;
+    }
+
+    label {
+        display: block;
+        margin-top: 15px;
+        font-weight: 500;
+    }
+
+    select, textarea, input {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        border-radius: 6px;
+        border: 1px solid #bcaaa4;
+        font-size: 14px;
+    }
+
+    textarea {
+        resize: vertical;
+    }
+
+    .btn {
+        margin-top: 20px;
+        width: 100%;
+        background: #6d4c41;
+        color: white;
+        padding: 12px;
+        border: none;
+        border-radius: 8px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .btn:hover {
+        background: #4e342e;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>Feedback Form</h1>
+
+    <form>
+
+        <!-- Food Section -->
+        <h2>Food</h2>
+
+        <label>1. How would you rate the quality of food?</label>
+        <select>
+            <option>Excellent</option>
+            <option>Good</option>
+            <option>Average</option>
+            <option>Poor</option>
+        </select>
+
+        <label>2. Was the taste of food up to your expectations?</label>
+        <select>
+            <option>Yes, absolutely</option>
+            <option>Mostly</option>
+            <option>Not really</option>
+            <option>No</option>
+        </select>
+
+        <!-- Ambience Section -->
+        <h2>Ambience</h2>
+
+        <label>1. How would you rate the overall ambience of the cafe?</label>
+        <select>
+            <option>Excellent</option>
+            <option>Good</option>
+            <option>Average</option>
+            <option>Poor</option>
+        </select>
+
+        <label>2. What did you enjoy the most about the ambience?</label>
+        <textarea rows="3" placeholder="Your answer..."></textarea>
+
+        <!-- Service Section -->
+        <h2>Customer Service</h2>
+
+        <label>1. How well did staff handle your requests?</label>
+        <select>
+            <option>Very well</option>
+            <option>Well</option>
+            <option>Okay</option>
+            <option>Poorly</option>
+        </select>
+
+        <label>2. Any suggestions you would like to give about us?</label>
+        <textarea rows="3" placeholder="Your suggestions..."></textarea>
+
+        <button type="submit" class="btn">Submit Feedback</button>
+
+    </form>
+</div>
+
+</body>
+</html>
